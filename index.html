@@ -10,33 +10,35 @@
     <link rel="Stylesheet" href="main.css" type="text/css" />
   </head>
   <body>
-    <h1 style="color: darkblue">BookVerse</h1>
-    <p>
-      Welcome to <strong style="color: darkblue">BookVerse</strong> your
-      ultimate destination for book enthusiasts! Dive into a world of literary
-      wonders as we bring you an extensive collection of books spanning various
-      genres, from timeless classics to contemporary bestsellers.
-    </p>
-    <hr />
+    <header>
+      <h1 style="color: darkblue">BookVerse</h1>
+      <p>
+        Welcome to <strong style="color: darkblue">BookVerse</strong> your
+        ultimate destination for book enthusiasts! Dive into a world of literary
+        wonders as we bring you an extensive collection of books spanning
+        various genres, from timeless classics to contemporary bestsellers.
+      </p>
+      <hr />
 
-    <p style="font-size: large">
-      Discover the top picks curated just for you, meticulously chosen to cater
-      to diverse tastes and preferences. Whether you're an avid reader seeking
-      your next literary adventure or a newcomer eager to explore the magic of
-      storytelling, we've got you covered. Delve deeper into the world of
-      literature with insightful book reviews, author spotlights, and exclusive
-      behind-the-scenes content. Uncover fascinating insights, hidden gems, and
-      intriguing narratives that will ignite your passion for reading and leave
-      you craving for more.<br />
+      <p style="font-size: large">
+        Discover the top picks curated just for you, meticulously chosen to
+        cater to diverse tastes and preferences. Whether you're an avid reader
+        seeking your next literary adventure or a newcomer eager to explore the
+        magic of storytelling, we've got you covered. Delve deeper into the
+        world of literature with insightful book reviews, author spotlights, and
+        exclusive behind-the-scenes content. Uncover fascinating insights,
+        hidden gems, and intriguing narratives that will ignite your passion for
+        reading and leave you craving for more.<br /><br />
 
-      So, Join our vibrant community of book lovers, where you can share your
-      thoughts, recommendations, and experiences with fellow bibliophiles.
-      Connect with like-minded individuals, participate in engaging discussions,
-      and embark on a journey of literary exploration together. At BookVerse,
-      the joy of reading knows no bounds. Start your journey today and unlock a
-      treasure trove of knowledge, inspiration, and endless possibilities
-      through the power of books
-    </p>
+        So, Join our vibrant community of book lovers, where you can share your
+        thoughts, recommendations, and experiences with fellow bibliophiles.
+        Connect with like-minded individuals, participate in engaging
+        discussions, and embark on a journey of literary exploration together.
+        At BookVerse, the joy of reading knows no bounds. Start your journey
+        today and unlock a treasure trove of knowledge, inspiration, and endless
+        possibilities through the power of books
+      </p>
+    </header>
     <hr />
     <p><strong style="color: darkblue">Genre of Books we have</strong></p>
     <nav>
@@ -113,5 +115,82 @@
         >
       </p>
     </section>
+    <hr />
+    <article id="Contact">
+      <h3 style="color: darkblue">Customer Details</h3>
+      <form action="http://httpbin.org/get" method="get">
+        <fieldset>
+          <legend>Personal Info</legend>
+          <p>
+            <label for="FirstName"> First name</label>
+            <input
+              type="text"
+              name="FirstName"
+              id="FirstName"
+              placeholder="Your Name"
+              autocomplete="on"
+              required
+            />
+          </p>
+          <p>
+            <label for="LastName"> Last name</label>
+            <input
+              type="text"
+              name="LastName"
+              id="LastName"
+              placeholder="Your Name"
+              autocomplete="on"
+              required
+            />
+          </p>
+          <p>
+            <label for="Phone Number">Phone Number</label>
+            <input
+              type="tel"
+              name="Phone Number"
+              id="Phone Number"
+              placeholder="Your Number"
+              autocomplete="on"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              required
+            />
+          </p>
+          <p>
+            <label for="Favourite Genre">Favourite Genre</label>
+            <input
+              type="text"
+              name="Favourite Genre"
+              id="Favourite Genre"
+              list="Favourite Genre-list"
+            />
+            <datalist id="Favourite Genre-list">
+              <option value="Crime thriller"></option>
+              <option value="Detective books"></option>
+              <option value="Romantic novels"></option>
+            </datalist>
+          </p>
+        </fieldset>
+        <br />
+        <legend style="color: darkblue">Give me your Feedback:</legend>
+        <label for="Message" style="color: darkblue">Your Massage:</label>
+        <br />
+        <textarea
+          name="Message"
+          id="Massage"
+          cols="30"
+          rows="10"
+          placeholder="Please Give Your Feedback Here"
+        ></textarea>
+        <fieldset>
+          <br />
+          <button type="Submit">Submit</button>
+          <button type="reset">Reset</button>
+        </fieldset>
+      </form>
+    </article>
+    <footer>
+      <p>&lt;&lt;&lt;&copy;Asmit Saha&gt;&gt;&gt;</p>
+      <p><a href="#">Back to Top</a></p>
+    </footer>
   </body>
 </html>
